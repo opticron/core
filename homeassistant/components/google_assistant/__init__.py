@@ -24,6 +24,7 @@ from .const import (
     CONF_ROOM_HINT,
     CONF_SECURE_DEVICES_PIN,
     CONF_SERVICE_ACCOUNT,
+    CONF_STRUCTURE_HINT,
     DEFAULT_EXPOSE_BY_DEFAULT,
     DEFAULT_EXPOSED_DOMAINS,
     DOMAIN,
@@ -42,6 +43,7 @@ ENTITY_SCHEMA = vol.Schema(
         vol.Optional(CONF_EXPOSE): cv.boolean,
         vol.Optional(CONF_ALIASES): vol.All(cv.ensure_list, [cv.string]),
         vol.Optional(CONF_ROOM_HINT): cv.string,
+        vol.Optional(CONF_STRUCTURE_HINT): cv.string,
     }
 )
 

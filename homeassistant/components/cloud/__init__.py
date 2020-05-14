@@ -64,6 +64,7 @@ GOOGLE_ENTITY_SCHEMA = vol.Schema(
         vol.Optional(CONF_NAME): cv.string,
         vol.Optional(CONF_ALIASES): vol.All(cv.ensure_list, [cv.string]),
         vol.Optional(ga_c.CONF_ROOM_HINT): cv.string,
+        vol.Optional(ga_c.CONF_STRUCTURE_HINT): cv.string,
     }
 )
 
